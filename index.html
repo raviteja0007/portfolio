@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K G Ravi Teja Gowda | AI/ML & Cloud Security Engineer</title>
+
+  <!-- Meta Descriptions -->
+  <meta name="description"
+    content="Cinematic command-center developer portfolio for K G Ravi Teja Gowda — AI/ML Engineer and Cloud Security Enthusiast based in Bengaluru, India.">
+  <meta name="keywords"
+    content="Ravi Teja Gowda, AI/ML Engineer, Cloud Security, Python, Azure, Machine Learning, Deep Learning, Cybersecurity, Bengaluru">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="K G Ravi Teja Gowda | AI/ML & Cloud Security Portfolio">
+  <meta property="og:description"
+    content="Cinematic dark-themed portfolio featuring AI/ML engineering, cloud security, and mission logs.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Sora & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Sora:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- CRT Scanlines & Vignette Overlays -->
+  <div class="crt-overlay"></div>
+  <div class="vignette-frame"></div>
+
+  <!-- Animated Grid & Canvas Network Background -->
+  <div class="grid-bg-overlay"></div>
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Telemetry Navigation Header -->
+  <header class="telemetry-nav">
+    <a href="#hero" class="nav-logo">
+      <div class="nav-logo-icon"><i class="fa-solid fa-terminal"></i></div>
+      <span>RAVI_TEJA<span class="cyan-text">.EXE</span></span>
+    </a>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#about" class="nav-link">Dossier</a></li>
+      <li><a href="#skills" class="nav-link">Arsenal</a></li>
+      <li><a href="#projects" class="nav-link">Missions</a></li>
+      <li><a href="#experience" class="nav-link">Deployments</a></li>
+      <li><a href="#certifications" class="nav-link">Clearances</a></li>
+      <li><a href="#terminal-section" class="nav-link">CLI</a></li>
+      <li><a href="#contact" class="nav-link">Channel</a></li>
+    </ul>
+
+    <div class="nav-controls">
+      <div class="status-indicator">
+        <span class="status-dot"></span>
+        <span id="utc-clock">UTC 00:00:00</span>
+      </div>
+      <button class="sfx-toggle" id="sfx-btn" title="Toggle UI Sound Effects">
+        <i class="fa-solid fa-volume-xmark" id="sfx-icon"></i> SFX: OFF
+      </button>
+      <button class="mobile-nav-btn" id="mobile-toggle" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main>
+
+    <!-- 1. HERO / OPENING SCENE -->
+    <section class="section-container hero-section" id="hero">
+
+      <!-- Terminal Bootup Sequence Box -->
+      <div class="hero-terminal-box">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span class="terminal-title">MISSION_CONTROL // INITIALIZATION_LOG</span>
+        </div>
+        <div class="terminal-body" id="hero-typewriter">
+          <!-- Populated dynamically by script.js -->
+        </div>
+      </div>
+
+      <div class="hero-subtitle-tag glow-text-cyan">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>AI/ML Engineer // Cloud Security Enthusiast // Bengaluru, KA</span>
+      </div>
+
+      <h1 class="hero-name">K G RAVI TEJA GOWDA</h1>
+
+      <p class="hero-bio">
+        Motivated engineering professional building intelligent, secure systems. Specialized in machine learning models,
+        retrieval-based AI, RESTful cloud microservices, and enterprise cybersecurity architecture.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary btn-amber">
+          <i class="fa-solid fa-folder-open"></i> Explore Mission Logs
+        </a>
+        <a href="#contact" class="btn-primary">
+          <i class="fa-solid fa-satellite-dish"></i> Establish Transmission
+        </a>
+        <a href="#terminal-section" class="btn-secondary">
+          <i class="fa-solid fa-code"></i> Launch CLI Prompt
+        </a>
+      </div>
+
+      <a href="#about" class="scroll-cue">
+        <span>SCROLL FOR DOSSIER</span>
+        <div class="scroll-arrow"></div>
+      </a>
+    </section>
+
+    <!-- 2. ABOUT / PROFILE (THE DOSSIER) -->
+    <section class="section-container" id="about">
+      <div class="section-header">
+        <div class="section-tag">Personnel Profile</div>
+        <h2 class="section-title">01. Dossier Overview</h2>
+      </div>
+
+      <div class="dossier-grid">
+        <!-- Left: ID Card Panel -->
+        <div class="hud-panel dossier-card">
+          <div class="hud-corner-tl"></div>
+          <div class="hud-corner-br"></div>
+
+          <div class="dossier-avatar-container">
+            <img src="assets/avatar.jpg" alt="K G Ravi Teja Gowda Avatar" class="dossier-avatar">
+            <div class="dossier-scan-line"></div>
+          </div>
+
+          <div class="dossier-id-tag">ID: RTG-2026-AIML</div>
+          <h3 class="dossier-name">Ravi Teja Gowda</h3>
+          <p class="dossier-role">AI/ML & Cloud Security Specialist</p>
+
+          <div class="dossier-stats">
+            <div class="stat-row">
+              <span class="stat-label">LOCATION:</span>
+              <span class="stat-val cyan-text">Bengaluru, KA, IN</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">EDUCATION:</span>
+              <span class="stat-val">B.E. AI & ML (CGPA 8.7)</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">PRIMARY CORE:</span>
+              <span class="stat-val amber-text">Python / Azure / ML</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">CLEARANCE:</span>
+              <span class="stat-val emerald-bright">AZ-900 / RH124-134</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">SYSTEM STATUS:</span>
+              <span class="stat-val cyan-text">ACTIVE DEPLOYMENT</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Frame Bio Paragraph -->
+        <div class="hud-panel dossier-content">
+          <div class="hud-corner-tl"></div>
+          <div class="hud-corner-br"></div>
+
+          <h3 class="dossier-heading">
+            <i class="fa-solid fa-microchip"></i> System Architecture & Mission Objective
+          </h3>
+
+          <p class="dossier-p">
+            I am a dedicated <strong>AI/ML Engineer</strong> with a strong foundation in cloud security, networking, and
+            enterprise full-stack development. My technical domain spans <strong>Python, Linux systems, Azure cloud
+              infrastructure, SQL databases, and RESTful APIs</strong>, coupled with deep cybersecurity fundamentals.
+          </p>
+
+          <p class="dossier-p">
+            Driven by a commitment to build resilient intelligent systems, I design robust machine learning models and
+            secure cloud services capable of mitigating threats while maximizing automation efficiency. Whether
+            developing NLP recommendation engines or architecting authentication workflows, I bridge the gap between
+            machine intelligence and enterprise security.
+          </p>
+
+          <div>
+            <h4 class="mono cyan-text" style="font-size: 0.9rem; margin-bottom: 10px;">CORE FOCUS AREAS:</h4>
+            <div class="focus-pills">
+              <span class="focus-pill"><i class="fa-solid fa-brain"></i> Machine Learning & NLP</span>
+              <span class="focus-pill"><i class="fa-solid fa-cloud-shield"></i> Azure IAM & Cloud Security</span>
+              <span class="focus-pill"><i class="fa-solid fa-network-wired"></i> Enterprise REST APIs</span>
+              <span class="focus-pill"><i class="fa-solid fa-terminal"></i> Linux System Administration</span>
+              <span class="focus-pill"><i class="fa-solid fa-database"></i> SQL & Data Pipelines</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS — "THE ARSENAL" -->
+    <section class="section-container" id="skills">
+      <div class="section-header">
+        <div class="section-tag">System Capabilities</div>
+        <h2 class="section-title">02. The Arsenal</h2>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="skills-filter">
+        <button class="filter-btn active" data-filter="all">ALL MODULES</button>
+        <button class="filter-btn" data-filter="aiml">AI & ML</button>
+        <button class="filter-btn" data-filter="cloud">CLOUD & SECURITY</button>
+        <button class="filter-btn" data-filter="fullstack">FULL STACK</button>
+        <button class="filter-btn" data-filter="cs">CORE CS</button>
+        <button class="filter-btn" data-filter="tools">TOOLS & INFRA</button>
+      </div>
+
+      <!-- Skill Grid -->
+      <div class="skills-grid" id="skills-container">
+        <!-- Dynamically generated or pre-built HTML cards -->
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS — "MISSION LOGS" -->
+    <section class="section-container" id="projects">
+      <div class="section-header">
+        <div class="section-tag">Case Files</div>
+        <h2 class="section-title">03. Mission Logs</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Career Stimulator -->
+        <div class="hud-panel project-card">
+          <div class="hud-corner-tl"></div>
+          <div class="hud-corner-br"></div>
+
+          <span class="project-status-badge">DEPLOYED // SECURE</span>
+
+          <div>
+            <div class="project-code">LOG_ID: ML-01 // REST_API_BACKEND</div>
+            <h3 class="project-title">Career Stimulator</h3>
+            <p class="project-tagline">
+              High-performance REST API backend with token authentication, rigorous input validation, and SQLite
+              integration for secure data management.
+            </p>
+
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">REST API</span>
+              <span class="project-tag">SQLite</span>
+              <span class="project-tag">Token Auth</span>
+              <span class="project-tag">Input Validation</span>
+              <span class="project-tag">Security</span>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <button class="btn-primary" onclick="openProjectModal('career-stimulator')">
+              <i class="fa-solid fa-file-code"></i> Inspect Case File
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2: Green Elixir Vision -->
+        <div class="hud-panel project-card">
+          <div class="hud-corner-tl"></div>
+          <div class="hud-corner-br"></div>
+
+          <span class="project-status-badge">ACTIVE // AI_NLP</span>
+
+          <div>
+            <div class="project-code">LOG_ID: ML-02 // RETRIEVAL_AI</div>
+            <h3 class="project-title">Green Elixir Vision</h3>
+            <p class="project-tagline">
+              NLP-driven recommendation engine (Python, Flask, React, PostgreSQL) mapping health symptoms to remedies
+              with a botanical plant knowledge base.
+            </p>
+
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Flask</span>
+              <span class="project-tag">React</span>
+              <span class="project-tag">PostgreSQL</span>
+              <span class="project-tag">NLP Engine</span>
+              <span class="project-tag">Ayurveda AI</span>
+            </div>
+          </div>
+
+          <div class="project-actions">
+            <button class="btn-primary" onclick="openProjectModal('green-elixir')">
+              <i class="fa-solid fa-file-code"></i> Inspect Case File
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. EXPERIENCE — "FIELD DEPLOYMENTS" -->
+    <section class="section-container" id="experience">
+      <div class="section-header">
+        <div class="section-tag">Operation History</div>
+        <h2 class="section-title">04. Field Deployments</h2>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Deployment 1 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="hud-panel timeline-card">
+            <div class="hud-corner-tl"></div>
+            <div class="hud-corner-br"></div>
+
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Java Full Stack Intern</h3>
+                <div class="timeline-org"><i class="fa-solid fa-building"></i> Qspiders</div>
+              </div>
+              <span class="timeline-date">Feb 2026 – Jun 2026</span>
+            </div>
+
+            <ul class="timeline-bullets">
+              <li>Architected secure enterprise backend systems using JDBC, Hibernate, and Spring Boot framework.</li>
+              <li>Engineered robust RESTful API endpoints and conducted rigorous unit testing and security integration
+                checks.</li>
+              <li>Designed normalized relational database schemas and optimized SQL queries for high-throughput database
+                transactions.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Deployment 2 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="hud-panel timeline-card">
+            <div class="hud-corner-tl"></div>
+            <div class="hud-corner-br"></div>
+
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Python & Machine Learning Specialist Trainee</h3>
+                <div class="timeline-org"><i class="fa-solid fa-laptop-code"></i> EZTS</div>
+              </div>
+              <span class="timeline-date">Apr 2024 – Sep 2024</span>
+            </div>
+
+            <ul class="timeline-bullets">
+              <li>Engineered and deployed an end-to-end Python + Machine Learning solution on a live production
+                environment.</li>
+              <li>Solved real-time technical bugs, model latency challenges, and data cleaning pipelines under industry
+                mentorship.</li>
+              <li>Mastered core data science algorithms, feature engineering, and model evaluation metrics.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. EDUCATION & EXTRACURRICULAR -->
+    <section class="section-container" id="education">
+      <div class="section-header">
+        <div class="section-tag">Academic Credentials</div>
+        <h2 class="section-title">05. Education & Tactical Honors</h2>
+      </div>
+
+      <div class="edu-grid">
+        <!-- Education Card -->
+        <div class="hud-panel edu-card">
+          <div class="hud-corner-tl"></div>
+          <div class="hud-corner-br"></div>
+
+          <div>
+            <div class="section-tag">Degree Program</div>
+            <h3 style="font-size: 1.3rem; margin-top: 4px;">B.E. in Artificial Intelligence & Machine Learning</h3>
+            <p class="mono cyan-text" style="font-size: 0.9rem; margin-top: 4px;">
+              Ballari Institute of Technology and Management (BITM)
+            </p>
+            <p class="mono" style="font-size: 0.8rem; color: var(--text-dim);">Duration: 2022 – 2026</p>
+          </div>
+
+          <div class="edu-cgpa-badge">
+            <i class="fa-solid fa-award"></i> CGPA: 8.7 / 10.0
+          </div>
+
+          <div>
+            <h4 class="mono" style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;">CORE COURSEWORK:
+            </h4>
+            <div class="project-tags">
+              <span class="project-tag">Data Structures & Algorithms</span>
+              <span class="project-tag">Operating Systems</span>
+              <span class="project-tag">Computer Networks</span>
+              <span class="project-tag">Object Oriented Programming</span>
+              <span class="project-tag">DBMS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Extracurricular Honors Card -->
+        <div class="hud-panel edu-card">
+          <div class="hud-corner-tl"></div>
+          <div class="hud-corner-br"></div>
+
+          <div>
+            <div class="section-tag">Achievements</div>
+            <h3 style="font-size: 1.3rem; margin-top: 4px;">Tactical Engagements & Competitions</h3>
+            <p class="mono" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">
+              Hackathons, technical debates, and innovation challenges.
+            </p>
+          </div>
+
+          <div class="extracurricular-chips">
+            <div class="chip-item">
+              <div class="chip-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <div>
+                <strong style="color: #ffffff;">Encryptcon 24-Hr Hackathon</strong>
+                <p class="mono" style="font-size: 0.78rem; color: var(--cyan-bright);">IIT Madras</p>
+              </div>
+            </div>
+
+            <div class="chip-item">
+              <div class="chip-icon"><i class="fa-solid fa-trophy"></i></div>
+              <div>
+                <strong style="color: #ffffff;">Ideathon & TechDebate</strong>
+                <p class="mono" style="font-size: 0.78rem; color: var(--amber-bright);">IGNITRON2K24</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CERTIFICATIONS — "CLEARANCE BADGES" -->
+    <section class="section-container" id="certifications">
+      <div class="section-header">
+        <div class="section-tag">Security Credentials</div>
+        <h2 class="section-title">06. Clearance Badges</h2>
+      </div>
+
+      <div class="badges-grid">
+
+        <div class="hud-panel badge-card">
+          <div class="hud-corner-tl"></div>
+          <div class="badge-icon-box"><i class="fa-brands fa-microsoft"></i></div>
+          <h3 class="badge-title">Microsoft Azure (AZ-900)</h3>
+          <p class="badge-issuer">Microsoft Fundamentals</p>
+          <span class="badge-status"><i class="fa-solid fa-circle-check"></i> VERIFIED CLEARANCE</span>
+        </div>
+
+        <div class="hud-panel badge-card">
+          <div class="hud-corner-tl"></div>
+          <div class="badge-icon-box"><i class="fa-brands fa-redhat"></i></div>
+          <h3 class="badge-title">Linux Administration</h3>
+          <p class="badge-issuer">RH124 – RH134 Certification</p>
+          <span class="badge-status"><i class="fa-solid fa-circle-check"></i> VERIFIED CLEARANCE</span>
+        </div>
+
+        <div class="hud-panel badge-card">
+          <div class="hud-corner-tl"></div>
+          <div class="badge-icon-box"><i class="fa-brands fa-python"></i></div>
+          <h3 class="badge-title">Python Programming</h3>
+          <p class="badge-issuer">EZTS Full Stack Track</p>
+          <span class="badge-status"><i class="fa-solid fa-circle-check"></i> VERIFIED CLEARANCE</span>
+        </div>
+
+        <div class="hud-panel badge-card">
+          <div class="hud-corner-tl"></div>
+          <div class="badge-icon-box"><i class="fa-brands fa-google"></i></div>
+          <h3 class="badge-title">GCP Gen-AI Track</h3>
+          <p class="badge-issuer">Google Cloud Career Launchpad</p>
+          <span class="badge-status"><i class="fa-solid fa-circle-check"></i> VERIFIED CLEARANCE</span>
+        </div>
+
+        <div class="hud-panel badge-card">
+          <div class="hud-corner-tl"></div>
+          <div class="badge-icon-box"><i class="fa-solid fa-brain"></i></div>
+          <h3 class="badge-title">Deep Learning Specialization</h3>
+          <p class="badge-issuer">DeepLearning.AI / Coursera</p>
+          <span class="badge-status"><i class="fa-solid fa-circle-check"></i> VERIFIED CLEARANCE</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. INTERACTIVE CLI TERMINAL -->
+    <section class="section-container" id="terminal-section">
+      <div class="section-header">
+        <div class="section-tag">Interactive Command Prompt</div>
+        <h2 class="section-title">07. Mission Control Terminal</h2>
+      </div>
+
+      <div class="cli-container hud-panel">
+        <div class="terminal-header" style="background: rgba(0,0,0,0.4); padding: 12px 16px;">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span class="terminal-title">RAVI_TEJA_CLI // v2.6.0 (TYPE 'help' FOR COMMANDS)</span>
+        </div>
+
+        <div class="cli-body" id="cli-output">
+          <div class="cli-output-line">Welcome to Ravi Teja's Mission Control CLI. Type <span
+              class="cyan-text">'help'</span> to see available system commands.</div>
+        </div>
+
+        <div class="cli-input-row" style="padding: 12px 20px; border-top: 1px solid rgba(255,255,255,0.08);">
+          <span class="cli-prompt">raviteja@command-center:~$</span>
+          <input type="text" id="cli-input" class="cli-input" placeholder="Type command..." autocomplete="off"
+            spellcheck="false">
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CONTACT / OPEN CHANNEL -->
+    <section class="section-container" id="contact">
+      <div class="section-header">
+        <div class="section-tag">Direct Transmission</div>
+        <h2 class="section-title">08. Open Channel</h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Transmission Channels -->
+        <div class="contact-channel-list">
+
+          <div class="hud-panel channel-card" onclick="copyContact('kgraviteja7@gmail.com', 'Email Address')">
+            <div class="channel-info">
+              <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div class="channel-label">ELECTRONIC MAIL</div>
+                <div class="channel-val">kgraviteja7@gmail.com</div>
+              </div>
+            </div>
+            <button class="btn-secondary" title="Copy Email"><i class="fa-solid fa-copy"></i></button>
+          </div>
+
+          <div class="hud-panel channel-card" onclick="copyContact('+91 7676800511', 'Phone Number')">
+            <div class="channel-info">
+              <div class="channel-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div class="channel-label">ENCRYPTED VOICE LINE</div>
+                <div class="channel-val">+91 7676800511</div>
+              </div>
+            </div>
+            <button class="btn-secondary" title="Copy Phone"><i class="fa-solid fa-copy"></i></button>
+          </div>
+
+          <a href="https://github.com/raviteja0007" target="_blank" rel="noopener noreferrer"
+            class="hud-panel channel-card">
+            <div class="channel-info">
+              <div class="channel-icon"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <div class="channel-label">CODE REPOSITORY</div>
+                <div class="channel-val">github.com/raviteja0007</div>
+              </div>
+            </div>
+            <span class="btn-secondary"><i class="fa-solid fa-up-right-from-square"></i></span>
+          </a>
+
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hud-panel channel-card">
+            <div class="channel-info">
+              <div class="channel-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div>
+                <div class="channel-label">PROFESSIONAL NETWORK</div>
+                <div class="channel-val">LinkedIn Profile</div>
+              </div>
+            </div>
+            <span class="btn-secondary"><i class="fa-solid fa-up-right-from-square"></i></span>
+          </a>
+
+        </div>
+
+        <!-- Transmission Form -->
+        <form class="hud-panel contact-form" id="transmission-form" onsubmit="handleFormSubmit(event)">
+          <div class="hud-corner-tl"></div>
+          <div class="hud-corner-br"></div>
+
+          <h3 class="mono cyan-text" style="font-size: 1.1rem;"><i class="fa-solid fa-paper-plane"></i> TRANSMIT MESSAGE
+          </h3>
+
+          <div class="form-group">
+            <label class="form-label" for="sender-name">SENDER CALLSIGN / NAME</label>
+            <input type="text" id="sender-name" class="form-input" placeholder="e.g. Cmdr. Sarah Connor" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="sender-email">FREQUENCY / EMAIL</label>
+            <input type="email" id="sender-email" class="form-input" placeholder="e.g. sarah@cyberdyne.io" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message-content">TRANSMISSION PAYLOAD</label>
+            <textarea id="message-content" class="form-textarea" placeholder="Type message payload..."
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary btn-amber" style="align-self: flex-start; margin-top: 10px;">
+            <i class="fa-solid fa-satellite"></i> BROADCAST TRANSMISSION
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL CONTAINER FOR PROJECT CASE FILES -->
+  <div class="modal-backdrop" id="project-modal" onclick="closeProjectModal(event)">
+    <div class="modal-box" id="modal-content-area" onclick="event.stopPropagation()">
+      <!-- Populated dynamically by script.js -->
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="mono" style="margin-bottom: 6px;">
+      SYSTEM CONTROL // DESIGNED & DEVELOPED BY <span class="cyan-text">K G RAVI TEJA GOWDA</span>
+    </div>
+    <div style="font-size: 0.72rem; color: var(--text-dim);">
+      Built with HTML5, CSS3, & ES6 JavaScript // Deep Charcoal & Cyan HUD Interface
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+
+</html>
